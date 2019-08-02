@@ -14,6 +14,10 @@ func initialize(c *cli.Context) error {
     if err := download(releaseUrl, "FullNode.jar"); err != nil {
         return err
     }
+    templateUrl := "https://raw.githubusercontent.com/TRON-US/go-tron-cli/master/config.tmpl"
+    if err := download(templateUrl, "config.tmpl"); err != nil {
+        return err
+    }
     return nil
 }
 
