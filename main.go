@@ -16,7 +16,7 @@ var (
 func main() {
 	app := cli.NewApp()
 	app.Name = "troncli"
-	app.Version = "0.0.1"
+	app.Version = "0.0.2"
 	app.Usage = "go version tron-cli"
 
 	app.Flags = []cli.Flag{
