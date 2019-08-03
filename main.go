@@ -8,9 +8,9 @@ import (
 )
 
 var (
-	networkType  string
-	fullNodePort string
-	solNodePort  string
+	NetworkType  string
+	FullNodePort string
+	SolNodePort  string
 )
 
 func main() {
@@ -24,19 +24,19 @@ func main() {
 			Name:        "typen, tn",
 			Usage:       "network type",
 			Value:       "mainnet",
-			Destination: &networkType,
+			Destination: &NetworkType,
 		},
 		cli.StringFlag{
 			Name:        "portf, pf",
 			Usage:       "fullnode port",
 			Value:       "8090",
-			Destination: &fullNodePort,
+			Destination: &FullNodePort,
 		},
 		cli.StringFlag{
 			Name:        "ports, ps",
 			Usage:       "solidity port",
 			Value:       "8091",
-			Destination: &solNodePort,
+			Destination: &SolNodePort,
 		},
 	}
 
