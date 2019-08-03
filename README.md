@@ -86,4 +86,6 @@ troncli run
 
 ### v0.0.1
 
-Very basic version of tron-cli, yet can help you both set up a node sync to mainnet or set up private net node.
+* Very basic version of tron-cli, yet can help you both set up a node sync to mainnet or set up private net node.
+
+* Support java-tron 3.6.1
