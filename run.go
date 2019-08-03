@@ -8,8 +8,8 @@ import (
 
 func run(c *cli.Context) error {
     cmd := exec.Command("java",
-        "-jar", "./FullNode.jar",
-        "-c", "./config.conf")
+        "-jar", nodeJar,
+        "-c", configFile)
     err := cmd.Run()
     if err != nil {
         return err

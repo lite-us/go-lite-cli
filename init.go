@@ -10,12 +10,10 @@ import (
 )
 
 func initialize(c *cli.Context) error {
-    releaseUrl := "https://github.com/tronprotocol/java-tron/releases/download/Odyssey-v3.6.1/FullNode.jar"
-    if err := download(releaseUrl, "FullNode.jar"); err != nil {
+    if err := download(releaseUrl, nodeJar); err != nil {
         return err
     }
-    templateUrl := "https://raw.githubusercontent.com/TRON-US/go-tron-cli/master/config.tmpl"
-    if err := download(templateUrl, "config.tmpl"); err != nil {
+    if err := download(templateUrl, configTemplate); err != nil {
         return err
     }
     return nil

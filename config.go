@@ -20,13 +20,13 @@ func configure(c *cli.Context) error {
 	nc.SolNodePort = solNodePort
 
 	// load config template from file
-	t, err := template.ParseFiles("config.tmpl")
+	t, err := template.ParseFiles(configTemplate)
 	if err != nil {
 		return err
 	}
 
 	// create file descriptor
-	f, err := os.Create("config.conf")
+	f, err := os.Create(configFile)
 	if err != nil {
 		f.Close()
 		return err
