@@ -92,5 +92,5 @@ troncli run
 
 ### v0.0.2
 
-* Support mac, linux and windows popular distributions.
-* Add instruction info.
+* Support mac, linux and windows popular distributions release build.
+* Add runtime info.
