@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"os"
 	"text/template"
 
@@ -36,6 +37,10 @@ func configure(c *cli.Context) error {
 	if err := writeConfigFile(); err != nil {
 		return err
 	}
+	fmt.Fprintf(c.App.Writer,
+		fmt.Sprintf("Successfully generated %v. \n",
+			configFile),
+	)
 	return nil
 }
 

@@ -13,5 +13,6 @@
 
 /bin
 /temp
+*.jar
 
 *.conf

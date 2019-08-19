@@ -88,8 +88,9 @@ troncli run
 
 * Very basic version of tron-cli, yet can help you both set up a node sync to mainnet or set up private net node.
 
-* Support java-tron 3.6.1
+* Support java-tron 3.6.1.
 
 ### v0.0.2
 
-* Support mac, linux and windows distributions.
+* Support mac, linux and windows popular distributions.
+* Add instruction info.
