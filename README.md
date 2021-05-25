@@ -1,4 +1,4 @@
-# go-tron-cli
+# go-lite-cli
 go version [tron-cli](https://github.com/TRON-US/go-tron-cli)
 
 ## Install
